@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Сума</title>
+</head>
+<body>
+<h1>Калькулятор</h1>
+
+
+<input id="a" type="number" placeholder="Перше число" />
+<input id="b" type="number" placeholder="Друге число" />
+<button onclick="calc()">Порахувати</button>
+
+
+<p>Результат: <span id="result">0</span></p>
+
+
+<script>
+function calc() {
+const a = Number(document.getElementById('a').value);
+const b = Number(document.getElementById('b').value);
+document.getElementById('result').textContent = a + b;
+}
+</script>
+</body>
+</html>
